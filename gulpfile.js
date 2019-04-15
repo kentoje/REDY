@@ -22,6 +22,11 @@ function fonts() {
       .pipe(dest('dist/fonts'));
 }
 
+function gitignore() {
+  return src('.gitignore')
+    .pipe(dest('dist'));
+}
+
 function pages() {
   return src('src/pages/**/*')
     .pipe(gulpif(prod, htmlmin({ collapseWhitespace: true })))
@@ -63,7 +68,7 @@ function serve(done) {
   done();
 }
 
-exports.dev = series(parallel(html, css, js, images, fonts, pages), serve, () =>
+exports.dev = series(parallel(html, css, js, images, fonts, pages, gitignore), serve, () =>
   watch((['./src/index.html', './src/pages/**/*.html', './src/scss/**/*.scss', './src/js/**/*.js']), series(parallel(html, css, js, images, fonts, pages), reload))
 );
-exports.build = series(html, css, js, images, fonts, pages);
+exports.build = series(html, css, js, images, fonts, pages, gitignore);
