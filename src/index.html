@@ -5,13 +5,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/main-min.js"></script>
+  <link rel="stylesheet" href="./scss/style.scss">
+  <script src="./js/rellax.js"></script>
+  <script defer src="./js/main.js"></script>
   <title>REDY</title>
 </head>
 
 <body>
-  <h1>ca marche</h1>
+  <section class="hero">
+    <header class="hero__header">
+      <div class="hero__header--logo">
+        <img src="img/logo.svg" alt="logoRedy">
+      </div>
+      <nav class="menu">
+        <ul class="menu__items">
+          <li>Home</li>
+          <li>Concept</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <a class="purshaseButton">Purshase a ticket</a>
+    </header>
+    <h1 class="quote quote__hero">Ready? Next <br> <span class="pink">depature</span> in <br></h1>
+    <div id="clockdiv" class="timer">
+      <div class="timer__container">
+        <span class="days"></span>
+        <div class="smalltext">days</div>
+      </div>
+      <div class="timer__container">
+        <span class="hours"></span>
+        <div class="smalltext">hours</div>
+      </div>
+      <div class="timer__container">
+        <span class="minutes"></span>
+        <div class="smalltext">minuts</div>
+      </div>
+      <div class="timer__container">
+        <span class="seconds"></span>
+        <div class="smalltext">seconds</div>
+      </div>
+    </div>
+  </section>
+  <section class="presentation">
+    <div class="presentation__container">
+      <div class="text text__pres">
+        <h1>Join us <br> on<span class="pink"> mars </span>.</h1>
+        <p>With our exclusive program, it is today possible. Try your luck and be part of the
+          chosen ones.</p>
+      </div>
+      <img class="marsImg rellax" data-rellax-speed="2" src="../src/img/mars.png" alt="">
+    </div>
+  </section>
+  <section class="thirdSection">
+    <img src="../src/img/interior1.png" alt="">
+    <div class="thirdSection__container">
+      <div class="thirdSection__container--text">
+        <h1>Fulfill your <span class="pink"> dream</span> <br> today!</h1>
+        <p>Start a fresh new life, on a new planet and <br>belong to the community you deserve.</p>
+      </div>
+    </div>
+  </section>
+  <section class="fourthSection">
+    <img src="../src/img/interior2.png" alt="">
+    <div class="fourthSection__container">
+      <div class="fourthSection__container--text">
+        <h1>Earn your new <br> <span class="pink"> house</span></h1>
+        <p>With our new technologies, we assure you to <br> be given a super comfortable house with <br> everything you
+          have ever
+          wished for!</p>
+      </div>
+    </div>
+  </section>
+  <section class="fifthSection">
+    <h1 class="fifthSection__text">Try your luck !</h1>
+    <a class="fifthSection__button">Purshase a ticket</a>
+  </section>
+  <footer class="footer">
+    <img src="../src/img/logo.svg" alt="">
+    <div class="footer__container">
+      <ul>
+        <li>Usefull links</li>
+        <li>Need help?</li>
+        <li>Rules</li>
+        <li>News on Redy</li>
+        <li>Winners area</li>
+      </ul>
+      <ul>
+        <li>Informations</li>
+        <li>Q&A</li>
+        <li>Group</li>
+        <li>Who are we</li>
+      </ul>
+      <ul>
+        <li>Contacts</li>
+        <li>Contact us</li>
+        <li>Press area</li>
+      </ul>
+    </div>
+    <h5>2019-groupe 21</h5>
+  </footer>
 </body>
 
 </html>
