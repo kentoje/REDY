@@ -1,7 +1,7 @@
 /dist
 /node_modules
 /.cache
-/.DS_Store
+.DS_Store
 /.postcssrc
 /.htmlnanorc
 /.posthtmlrc
