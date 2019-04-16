@@ -93,6 +93,7 @@
   background-size: cover;
   color: white;
   font-family:'sf_display';
+  overflow: hidden;
   &__container {
     display: flex;
     height: 400px;
@@ -104,7 +105,7 @@
 }
 
 .marsImg {
-  margin-top: 40px;
+  margin-top: 180px;
   margin-right: 40px;
   height: 80%;
 }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./scss/style.scss">
-  <script defer src="./js/rellax.js"></script>
+  <script src="./js/rellax.js"></script>
   <script defer src="./js/main.js"></script>
   <title>REDY</title>
 </head>
@@ -26,9 +26,25 @@
       </nav>
       <a class="purshaseButton">Purshase a ticket</a>
     </header>
-    <h1 class="quote quote__hero">Ready? Next <br> <span class="pink">depature</span> in <br> <span id="count"
-        class="countDown"></span>
-    </h1>
+    <h1 class="quote quote__hero">Ready? Next <br> <span class="pink">depature</span> in <br></h1>
+    <div id="clockdiv" class="timer">
+      <div class="timer__container">
+        <span class="days"></span>
+        <div class="smalltext">days</div>
+      </div>
+      <div class="timer__container">
+        <span class="hours"></span>
+        <div class="smalltext">hours</div>
+      </div>
+      <div class="timer__container">
+        <span class="minutes"></span>
+        <div class="smalltext">minuts</div>
+      </div>
+      <div class="timer__container">
+        <span class="seconds"></span>
+        <div class="smalltext">seconds</div>
+      </div>
+    </div>
   </section>
   <section class="presentation">
     <div class="presentation__container">
@@ -37,7 +53,7 @@
         <p>With our exclusive program, it is today possible. Try your luck and be part of the
           chosen ones.</p>
       </div>
-      <img class="marsImg rellax" data-rellax-speed="-2" src="../src/img/mars.png" alt="">
+      <img class="marsImg rellax" data-rellax-speed="2" src="../src/img/mars.png" alt="">
     </div>
   </section>
   <section class="thirdSection">
