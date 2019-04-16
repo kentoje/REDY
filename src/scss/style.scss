@@ -1,5 +1,7 @@
-// Blocs
+@import './vendors/reset.scss';
 
+// Blocs
+// Vendors
 
 // Global
 @import './global/interface.scss';
@@ -10,6 +12,3 @@
 @import './config/colors.scss';
 @import './config/fonts.scss';
 @import './config/mixins.scss';
-
-// Vendors
-@import './vendors/reset.scss';

@@ -1,0 +1,250 @@
+.hero {
+  position: relative;
+  color: white;
+  font-family:'sf_display';
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/stars-min.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  &__header {
+    display: flex;
+    position: relative;
+    height: 90px;
+    justify-content: center;
+    &--logo {
+      position: absolute;
+      left: 65px;
+      top: 25px;
+    }
+  }
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    li {
+      padding: 8px 60px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+}
+
+.menu li:first-child {
+  border-right: solid 1px white;
+}
+
+.menu li:last-child {
+  border-left: solid 1px white;
+}
+
+.purshaseButton {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    background:linear-gradient(#FF4F19, #FF3465);
+    padding: 35px 60px;
+  }
+
+
+  .quote {
+    position: absolute;
+    width: 600px;
+    font-size: 65px;
+    font-weight: bold;
+    .pink {
+      color: #FF3465;
+    }
+    &__hero {
+      top: 250px;
+      left: 60px;
+    }
+  }
+
+  .text {
+    width: 550px;
+    font-size: 65px;
+    font-weight: bold;
+    background-color: black;
+    padding: 65px 65px;
+    .pink {
+      color: #FF3465;
+    }
+    p {
+      font-size: 21px;
+      font-weight: normal;
+      margin-top: 30px;
+      width: 400px;
+      line-height: 31.5px;
+    }
+  }
+
+
+.presentation {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/stars-min.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  color: white;
+  font-family:'sf_display';
+  &__container {
+    display: flex;
+    height: 400px;
+    position: absolute;
+    top: 160px;
+    left: 200px;
+    background-color: black;
+  }
+}
+
+.marsImg {
+  margin-top: 40px;
+  margin-right: 40px;
+  height: 80%;
+}
+
+.thirdSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: white;
+  font-family:'sf_display';
+  img {
+    position: absolute;
+    bottom: 70px;
+    left: 250px;
+    width: 480px;
+  }
+  &__container {
+    position: absolute;
+    background-color: black;
+    top: 200px;
+    right: 280px;
+    &--text {
+      margin:80px 90px;
+      justify-content: center;
+      h1 {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      .pink {
+      color: #FF3465;
+        }
+      }
+    }
+  }
+}
+
+p {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 31.5px;
+}
+
+.fourthSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/stars-min.jpg');
+  color: white;
+  font-family:'sf_display';
+  img {
+    position: absolute;
+    top: 80px;
+    right: 220px;
+    width: 480px;
+  }
+  &__container {
+    position: absolute;
+    background-color: black;
+    top: 200px;
+    left: 250px;
+    &--text {
+      margin:80px 90px;
+      justify-content: center;
+      h1 {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      .pink {
+      color: #FF3465;
+        }
+      }
+    }
+  }
+}
+
+.fifthSection {
+  color: white;
+  font-family:'sf_display';
+  width: 100vw;
+  height: 50vh;
+  background:linear-gradient(#FF4F19, #FF3465);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  &__text {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120px;
+  }
+  &__button {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 50px;
+    display: block;
+    width: 260px;
+    padding-top: 35px;
+    height: 90px;
+    margin-left: calc(50% - 130px);
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  font-family:'sf_display';
+  img {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+  }
+  h5 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.footer__container {
+  position: relative;
+  width: 50%;
+  height: 65%;
+  margin-left: 25%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 16px;
+  li {
+    margin-top: 20px;
+  }
+  li:first-child {
+    font-weight: bold;
+  }
+  
+}
