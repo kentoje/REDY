@@ -4,7 +4,7 @@
   font-family:'sf_display';
   width: 100vw;
   height: 100vh;
-  // background-image: url('../img/stars-min.jpg');
+  background-image: url('../img/stars-min.jpg');
   background-color: rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat; 
@@ -15,7 +15,7 @@
     position: relative;
     height: 90px;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     width: 100%;
     &--logo {
       position: absolute;
@@ -27,6 +27,7 @@
     object-fit: cover;
     object-position: 80% 0;
     height: 100%;
+    opacity: 0.6;
     width: 100%;
   }
 }
@@ -68,8 +69,8 @@
     width: 600px;
     font-size: 65px;
     font-weight: bold;
-    height: 180px;
-    top: 250px;
+    height: 280px;
+    top: 220px;
     left: 60px;
     text-align: left;
     overflow-y: scroll;
@@ -83,7 +84,7 @@
       
     }
     &__little {
-      
+      font-size: 5px;
     }
   }
 
@@ -262,7 +263,7 @@ footer {
     text-align: center;
     font-weight: bold;
   }
-}
+  }
 
 .footer__container {
   position: relative;
