@@ -27,7 +27,7 @@
     object-fit: cover;
     object-position: 80% 0;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.4;
     width: 100%;
   }
 }
@@ -55,28 +55,30 @@
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    right: 0;
+    right: 8px;
+    top: 8px;
     color: black;
-    background-color: white;
+    border: #e1683b solid 2px;
     // background:linear-gradient(#FF4F19, #FF3465);
-    padding: 35px 60px;
+    padding: 25px 50px;
+    color: #e1683b;
   }
 
 
   .quote {
     z-index: 12;
     position: absolute;
-    width: 600px;
+    width: 1000px;
     font-size: 65px;
     font-weight: bold;
-    height: 280px;
-    top: 220px;
+    height: 480px;
+    top: 200px;
     left: 60px;
     text-align: left;
     overflow-y: scroll;
     .pink {
       // color: #FF3465;
-      color: rgb(255, 255, 255);
+      color: #e1683b;
       font-size: 120px;
       text-transform: uppercase;
     }
@@ -84,7 +86,12 @@
       
     }
     &__little {
-      font-size: 5px;
+      font-weight: normal;
+      position: absolute;
+      font-size: 20px;
+      top: 180px;
+      left: 300px;
+      color: white;
     }
   }
 
@@ -96,7 +103,7 @@
     padding: 65px 65px;
     .pink {
       // color: #FF3465;
-      color: rgb(111, 111, 111);
+      color: rgb(244, 110, 47);
     }
     p {
       font-size: 21px;
@@ -133,10 +140,26 @@
 }
 
 .marsImg {
-  margin-top: 180px;
-  margin-right: 40px;
+  position: absolute;
   height: 80%;
+  left: 550px;
+  &__1 {
+    top: 80px; 
+  }
+
+  &__2 {
+    opacity: 0.5;
+    top: 152px; 
+  }
+
+  &__3 {
+    opacity: 0.2;
+    top: 225px; 
+  }
 }
+// 
+
+
 
 .thirdSection {
   position: relative;
@@ -155,7 +178,8 @@
     position: absolute;
     // background-color: black;
     top: 200px;
-    right: 200px;
+    right: 140px;
+    width: 600px;
     color: black;
     &--text {
       margin:80px 90px;
@@ -164,9 +188,9 @@
         font-size: 45px;
         font-weight: bold;
         margin-bottom: 30px;
-      // .pink {
-      // color: #FF3465;
-      //   }
+      .pink {
+      color: rgb(244, 110, 47);
+        }
       }
     }
   }
@@ -220,7 +244,7 @@ p {
   font-family:'sf_display';
   width: 100vw;
   height: 50vh;
-  background:linear-gradient(#FF4F19, #FF3465);
+  background-color:#e1683b;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -283,3 +307,33 @@ footer {
   }
   
 }
+
+.scroller {
+  width: 3px;
+  background: #949494;
+  position: absolute;
+  height: 100px;
+  left: 50%;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.scroller::before {
+  content: '';
+  position: absolute;
+  height: 52px;
+  background: #FFFFFF;
+  width: 3px;
+  animation: scroller 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+
+@keyframes scroller {
+  0% {
+      transform: translateY(-52px)
+  }
+
+  100% {
+      transform: translateY(188px)
+  }
+}
+
