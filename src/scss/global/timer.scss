@@ -1,9 +1,10 @@
 
 
 .timer{
+  z-index: 14;
   position: absolute;
-  left: 60px;;
-  top: 400px;
+  left: calc( 50% - 285px);
+  top: 170px;
 	color: white;
 	font-weight: 100;
 	text-align: center;
