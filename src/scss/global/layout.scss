@@ -32,24 +32,37 @@
   }
 }
 
-// .menu ul {
-//     display: flex;
-//     justify-content: space-around;
-//     padding: 30px;
-//     li {
-//       padding: 8px 60px;
-//       font-weight: bold;
-//       font-size: 17px;
-//     }
-// }
+.numbers {
+  position: absolute;
+  bottom: 180px;
+  left: 60px;
+  width: 650px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 0.5px rgba(255, 255, 255, 0.582);
+  padding: 20px 20px;
+  &__container {
+    &--number{
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    &--title{
+      font-size: 40px;
+    }
+  }
+}
 
-// .menu li:first-child {
-//   border-right: solid 1px white;
-// }
+.numbers__container:first-child {
+  border-right: rgba(255, 255, 255, 0.582) solid 0.5px;
+  padding-right: 40px;
+}
 
-// .menu li:last-child {
-//   border-left: solid 1px white;
-// }
+.numbers__container:last-child {
+  border-left: rgba(255, 255, 255, 0.582) solid 0.5px;
+  padding-left: 40px;
+}
 
 .purshaseButton {
     font-size: 18px;
@@ -59,7 +72,6 @@
     top: 8px;
     color: black;
     border: #e1683b solid 2px;
-    // background:linear-gradient(#FF4F19, #FF3465);
     padding: 25px 50px;
     color: #e1683b;
   }
@@ -69,17 +81,16 @@
     z-index: 12;
     position: absolute;
     width: 1000px;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
     height: 480px;
-    top: 200px;
+    top: 180px;
     left: 60px;
     text-align: left;
     overflow-y: scroll;
     .pink {
-      // color: #FF3465;
-      color: #e1683b;
-      font-size: 120px;
+      color: rgb(244, 110, 47)b;
+      font-size: 100px;
       text-transform: uppercase;
     }
     &__hero {
@@ -177,7 +188,7 @@
   &__container {
     position: absolute;
     // background-color: black;
-    top: 200px;
+    top: 160px;
     right: 140px;
     width: 600px;
     color: black;
@@ -193,6 +204,17 @@
         }
       }
     }
+    .redhomeButton{
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      right: 222px;
+      bottom: -60px;
+      border: #e1683b solid 2px;
+      padding: 25px 50px;
+      color: #e1683b;
+    }
   }
 }
 
@@ -207,7 +229,7 @@ p {
   width: 100vw;
   height: 100vh;
   // background-image: url('../img/stars-min.jpg');
-  color: white;
+  color: rgb(0, 0, 0);
   font-family:'sf_display';
   &__stars {
     width: 100%;
@@ -221,7 +243,8 @@ p {
   }
   &__container {
     position: absolute;
-    background-color: black;
+    // background-color: black;
+    border: #e1683b solid 0.5px;
     top: 200px;
     left: 250px;
     &--text {
@@ -243,7 +266,7 @@ p {
   color: white;
   font-family:'sf_display';
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   background-color:#e1683b;
   position: relative;
   text-align: center;
@@ -252,10 +275,10 @@ p {
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
   }
   &__button {
-    color: black;
+    color: #e1683b;
     font-size: 18px;
     font-weight: bold;
     background-color: white;
@@ -265,6 +288,18 @@ p {
     padding-top: 35px;
     height: 90px;
     margin-left: calc(50% - 130px);
+  }
+  &__lotery {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  &__numbers {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
   }
 }
 
