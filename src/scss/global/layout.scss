@@ -4,63 +4,86 @@
   font-family:'sf_display';
   width: 100vw;
   height: 100vh;
-  background-image: url('../img/stars-min.jpg');
+  // background-image: url('../img/stars-min.jpg');
+  background-color: rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
   &__header {
+    z-index: 10;
     display: flex;
     position: relative;
     height: 90px;
     justify-content: center;
+    position: fixed;
+    width: 100%;
     &--logo {
       position: absolute;
       left: 65px;
       top: 25px;
     }
   }
+  &__img {
+    object-fit: cover;
+    object-position: 80% 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    li {
-      padding: 8px 60px;
-      font-weight: bold;
-      font-size: 17px;
-    }
-}
+// .menu ul {
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 30px;
+//     li {
+//       padding: 8px 60px;
+//       font-weight: bold;
+//       font-size: 17px;
+//     }
+// }
 
-.menu li:first-child {
-  border-right: solid 1px white;
-}
+// .menu li:first-child {
+//   border-right: solid 1px white;
+// }
 
-.menu li:last-child {
-  border-left: solid 1px white;
-}
+// .menu li:last-child {
+//   border-left: solid 1px white;
+// }
 
 .purshaseButton {
     font-size: 18px;
     font-weight: bold;
     position: absolute;
     right: 0;
-    background:linear-gradient(#FF4F19, #FF3465);
+    color: black;
+    background-color: white;
+    // background:linear-gradient(#FF4F19, #FF3465);
     padding: 35px 60px;
   }
 
 
   .quote {
+    z-index: 12;
     position: absolute;
     width: 600px;
     font-size: 65px;
     font-weight: bold;
+    height: 180px;
+    top: 250px;
+    left: 60px;
+    text-align: left;
+    overflow-y: scroll;
     .pink {
-      color: #FF3465;
+      // color: #FF3465;
+      color: rgb(255, 255, 255);
+      font-size: 120px;
+      text-transform: uppercase;
     }
     &__hero {
-      top: 250px;
-      left: 60px;
+      
+    }
+    &__little {
+      
     }
   }
 
@@ -68,10 +91,11 @@
     width: 550px;
     font-size: 65px;
     font-weight: bold;
-    background-color: black;
+    // background-color: black;
     padding: 65px 65px;
     .pink {
-      color: #FF3465;
+      // color: #FF3465;
+      color: rgb(111, 111, 111);
     }
     p {
       font-size: 21px;
@@ -84,14 +108,16 @@
 
 
 .presentation {
+  background-color: white;
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('../img/stars-min.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  color: white;
+  // background-image: url('../img/stars-min.jpg');
+  // background-position: center;
+  // background-repeat: no-repeat; 
+  // background-size: cover;
+  // color: white;
+  color: black;
   font-family:'sf_display';
   overflow: hidden;
   &__container {
@@ -100,7 +126,8 @@
     position: absolute;
     top: 160px;
     left: 200px;
-    background-color: black;
+    // background-color: rgba(0, 0, 0, 0.536);
+   
   }
 }
 
@@ -125,9 +152,10 @@
   }
   &__container {
     position: absolute;
-    background-color: black;
+    // background-color: black;
     top: 200px;
-    right: 280px;
+    right: 200px;
+    color: black;
     &--text {
       margin:80px 90px;
       justify-content: center;
@@ -135,9 +163,9 @@
         font-size: 45px;
         font-weight: bold;
         margin-bottom: 30px;
-      .pink {
-      color: #FF3465;
-        }
+      // .pink {
+      // color: #FF3465;
+      //   }
       }
     }
   }
@@ -153,10 +181,14 @@ p {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('../img/stars-min.jpg');
+  // background-image: url('../img/stars-min.jpg');
   color: white;
   font-family:'sf_display';
-  img {
+  &__stars {
+    width: 100%;
+
+  }
+  &__img {
     position: absolute;
     top: 80px;
     right: 220px;
@@ -174,9 +206,9 @@ p {
         font-size: 45px;
         font-weight: bold;
         margin-bottom: 30px;
-      .pink {
-      color: #FF3465;
-        }
+      // .pink {
+      // color: #FF3465;
+      //   }
       }
     }
   }
