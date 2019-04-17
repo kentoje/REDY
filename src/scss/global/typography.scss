@@ -23,6 +23,12 @@ $secondary-color: #FFFFFF;
   }
   .menu {
     width: 402px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,13 +40,15 @@ $secondary-color: #FFFFFF;
   .row__decoration {
     height: 22px;
     width: 1px;
+    margin: 0 56px 0 56px;
     background: #949494;
   }
   .header__button {
     padding: 25px 50px;
-    border: #e1683b solid 2px;
-    color: #e1683b;
-    color: $secondary-color;
+    /* border: #e1683b solid 2px;
+    color: #e1683b; */
+    background: $secondary-color;
+    color: $primary-color;
     font-size: 18px;
     font-weight: bold;
   }
@@ -92,7 +100,7 @@ main {
     max-height: 600px;
     position: relative;
     left: 50%;
-    transform: translate(-50% 0);
+    transform: translateX(-50%);
   }
   .section__rocket--specs {
     width: 100%;
