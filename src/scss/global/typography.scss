@@ -1,5 +1,6 @@
 $primary-color: #101010;
 $secondary-color: #FFFFFF;
+$transition-time: 0.4s;
 
 .body {
   font-family: 'sf_display', sans-serif;
@@ -72,6 +73,7 @@ main {
     /* width: 100%; */
     /* min-height: 100vh; */
     .section__title {
+      transition: opacity $transition-time, transform $transition-time;
       font-size: 37px;
       font-weight: bold;
       margin-top: 194px;
@@ -81,6 +83,9 @@ main {
       font-size: 21px;
       line-height: 31.5px;
       margin-bottom: 96px;
+    }
+    .section__text {
+      transition: opacity $transition-time, transform $transition-time;
     }
     img {
       max-width: 100%;
@@ -103,6 +108,7 @@ main {
     transform: translateX(-50%);
   }
   .section__rocket--specs {
+    transition: opacity $transition-time, transform $transition-time;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -168,4 +174,18 @@ main {
   .section__image--fourth {
     margin-bottom: 194px;
   }
+}
+
+.section__image {
+  transition: opacity $transition-time, transform $transition-time;
+}
+
+.is-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(-40px);
 }

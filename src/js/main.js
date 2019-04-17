@@ -45,3 +45,23 @@ import Rellax from "rellax";
 var rellax = new Rellax('.rellax', {
   center: false,
 });
+
+/* Waypoint on elements */
+
+let caseElementsTest = document.querySelectorAll('.is-hidden');
+let elementsArray = [];
+for ( let i = 1; i < caseElementsTest.length + 1; i++ ) {
+    let caseElement = caseElementsTest[i];
+    i < 10 ? elementsArray.push(`element-0${i}`) : elementsArray.push(`element-${i}`);
+}
+
+elementsArray.forEach( ( id ) => {
+let element = document.getElementById( id );
+let waypoint = new Waypoint({
+    element: element,
+    handler: function( direction ) {
+    element.classList.toggle( 'is-visible' );
+    },
+    offset: '93%'
+});
+});
