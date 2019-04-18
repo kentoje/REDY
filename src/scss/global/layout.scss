@@ -19,8 +19,8 @@
     width: 100%;
     &--logo {
       position: absolute;
-      left: 65px;
-      top: 25px;
+      left: 52px;
+      top: 12px;
     }
   }
   &__img {
@@ -30,6 +30,31 @@
     opacity: 0.4;
     width: 100%;
   }
+}
+
+.menu {
+  &__items{
+    width: 402px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      font-weight: bold;
+    }
+  }
+}
+.row__decoration {
+  height: 22px;
+  width: 1px;
+  margin: 0 56px 0 56px;
+  background: #949494;
 }
 
 .numbers {
@@ -64,13 +89,12 @@
   padding-left: 40px;
 }
 
-.purshaseButton {
+.purchaseButton {
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    right: 8px;
-    top: 8px;
-    color: black;
+    right: 0px;
+    top: 0px;
     border: #e1683b solid 2px;
     padding: 25px 50px;
     color: #e1683b;
@@ -141,10 +165,18 @@
   overflow: hidden;
   &__container {
     display: flex;
-    height: 400px;
+    height: 550px;
     position: absolute;
-    top: 140px;
+    top: 100px;
     left: 200px;
+    .marsButton{
+      color: rgb(244, 110, 47);
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 60px;
+      left: 65px;
+    }
   }
   &__border {
     z-index: 2;
@@ -255,16 +287,25 @@ p {
     border: #e1683b solid 0.5px;
     top: 150px;
     left: 230px;
+    height: 440px;
     &--text {
-      margin:80px 90px;
+      margin:50px 90px;
       justify-content: center;
       h1 {
         font-size: 45px;
         font-weight: bold;
         margin-bottom: 30px;
       .pink {
-      color: #e1683b;
+        color: #e1683b;
         }
+      }
+      .communityButton{
+        color: rgb(244, 110, 47);
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 60px;
+        left: 90px;
       }
     }
   }
