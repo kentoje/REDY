@@ -180,9 +180,24 @@ main {
   transition: opacity $transition-time, transform $transition-time;
 }
 
+.bloc__transition--info {
+  position: fixed;
+  min-width: 100vw;
+  height: 100vh;
+  background: $primary-color;
+  bottom: 0;
+  z-index: 666;
+  transition: opacity 0.5s;
+
+}
+
 .is-hidden {
   opacity: 0;
   transform: translateY(40px);
+}
+
+.is-hidden-transition {
+  opacity: 0;
 }
 
 .is-visible {
