@@ -65,3 +65,7 @@ let waypoint = new Waypoint({
     offset: '93%'
 });
 });
+
+
+// Instance Unity
+/* let gameInstance = UnityLoader.instantiate( 'gameContainer', 'path vers le projet' ); */
