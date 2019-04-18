@@ -177,6 +177,7 @@
       position: absolute;
       bottom: 60px;
       left: 65px;
+      z-index: 30;
     }
   }
   &__border {
@@ -194,6 +195,10 @@
       height: 550px;
     }
   }
+}
+.marsButton:hover {
+
+  text-decoration: underline;
 }
 
 .marsImg {
@@ -310,6 +315,11 @@ p {
     }
   }
 }
+
+.communityButton:hover {
+  text-decoration: underline;
+}
+
 
 .fifthSection {
   color: white;
