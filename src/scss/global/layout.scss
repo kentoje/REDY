@@ -340,6 +340,16 @@ footer {
   
 }
 
+.bloc__transition {
+  position: fixed;
+  bottom: 0;
+  min-width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .scroller {
   width: 3px;
   background: #949494;
