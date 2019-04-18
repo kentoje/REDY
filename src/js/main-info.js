@@ -1,3 +1,5 @@
+/* Clock */
+
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -40,25 +42,40 @@ function initializeClock(id, endtime) {
 var deadline = new Date(Date.parse(new Date("May 27,2019 10:00:00")));
 initializeClock('clockdiv', deadline);
 
-import Rellax from "rellax";
-
-var rellax = new Rellax('.rellax', {
-  center: false,
-});
-
 /* Transition */
 // TODO: Uncomment at the end
 
-/* let linkConcept = document.querySelector('.menu__link--concept');
-let transitionIndex = document.querySelector('.bloc__transition');
+/* let transitionInfo = document.querySelector( '.bloc__transition--info' );
 
-linkConcept.addEventListener( 'click', () => {
-  transitionIndex.classList.add( 'is-visible' );
-  transitionIndex.style.zIndex = '666';
-  setTimeout( () => {
-    location.href = `/pages/info.html`;
-  }, 1000);
-} ); */
+setTimeout( () => {
+  transitionInfo.classList.add( 'is-hidden-transition' );
+}, 500);
 
+setTimeout( () => {
+  transitionInfo.style.zIndex = '-1';
+}, 2000); */
 
 
+/* Waypoint on elements */
+
+let caseElementsTest = document.querySelectorAll('.is-hidden');
+let elementsArray = [];
+for ( let i = 1; i < caseElementsTest.length + 1; i++ ) {
+    let caseElement = caseElementsTest[i];
+    i < 10 ? elementsArray.push(`element-0${i}`) : elementsArray.push(`element-${i}`);
+}
+
+elementsArray.forEach( ( id ) => {
+let element = document.getElementById( id );
+let waypoint = new Waypoint({
+    element: element,
+    handler: function( direction ) {
+    element.classList.toggle( 'is-visible' );
+    },
+    offset: '93%'
+});
+});
+
+
+// Instance Unity
+/* let gameInstance = UnityLoader.instantiate( 'gameContainer', 'path vers le projet' ); */
